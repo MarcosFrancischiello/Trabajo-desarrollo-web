@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: url(../img/mountains-1412683_1280.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    flex-direction: column;
+    height: 200px;
+}
+video{
+    width: 100%;
+    max-height: 1000px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+div{
+    display: flex;
+}
+ul{
+    list-style: none;
+}
+a{
+    font-size: 100%;
+}
+.barra{
+    color: white;
+    font-size: large;
+}
+.header-tittle{
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+}
+.header-list{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.general{
+    flex-direction: row;
+    gap: 50px;
+    padding: 5%;
+    background-color: rgb(170, 235, 213);
+    max-height: 1500px;
+}
+.photo-one{
+    width: 20%;
+}
+.general-two{
+    flex-direction: column;
+    width: 80%;
+
+}
+.basis{
+    flex-basis: 50%;
+}
+.texto{
+    flex-direction: column;
+}
+.general-four{
+    flex-direction: column;
+}
+.div-horarios{
+    flex-direction: column;
+}
+.footer{
+    border-top: 2px solid black;
+    margin: 20px;
+    flex-direction: row;
+}
+.ofertas{
+    width: 50%;
+}
+.paginas{
+    flex-direction: row;
+    width: 50%;
+}
+.seguinos{
+    justify-content: center;
+    width: 50%;
+}
+.links{
+    width: 50%;
+}
+.link{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.mail{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+@media (min-width: 400px) and (max-width: 840px){
+    .mail{
+        flex-direction: column;
+    }
+    .seguinos{
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        width: 70%;
+    }
+    .links{
+        width: 30%;
+    }
+    .link{
+        flex-direction: column;
+        align-items: end;
+    }
+
+}
