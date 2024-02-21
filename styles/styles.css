@@ -3,3 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+header{
+    background-image: url(../img/mountains-1412683_1280.png);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+.header-title{
+    text-align: center;
+    padding: 75px;
+}
+h1{
+    font-size: x-large;
+    color: #0F8B8D;
+}
+.nav-list{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    list-style: none;
+    background-color: rgb(187, 220, 250);
+    padding: 10px;
+}
+.nav-link{
+    color: rgb(21, 0, 116);
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+}
+@media screen and (min-width: 350px) and (max-width: 450px){
+    h1{
+        font-size: 18px;
+    }
+    .nav-link{
+        font-size: medium;
+    }
+}
