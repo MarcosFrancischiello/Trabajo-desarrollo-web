@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+img{
+    width: 100%;
+    height: 100%;
+}
+/*Incio header*/
 header{
     background-image: url(../img/mountains-1412683_1280.png);
     background-size: cover;
@@ -17,12 +22,13 @@ h1{
     font-size: x-large;
     color: #0F8B8D;
 }
+/*Estilos de navbar*/
 .nav-list{
     display: flex;
     text-align: center;
     justify-content: space-around;
     list-style: none;
-    background-color: rgb(187, 220, 250);
+    background-color: #24ABE5;
     padding: 10px;
 }
 .nav-link{
@@ -31,6 +37,7 @@ h1{
     font-size: large;
     font-weight: bold;
 }
+/* Estilos para pantallas de ancho medio (350px a 450px) */
 @media screen and (min-width: 350px) and (max-width: 450px){
     h1{
         font-size: 18px;
@@ -38,4 +45,101 @@ h1{
     .nav-link{
         font-size: medium;
     }
+}
+/*Estilos main pagina home*/
+.main-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #55b5f9;
+}
+.img-one{
+    height: 150px;
+    object-fit: cover;
+}
+/*div principal*/
+.content-container{
+    flex: 0 0 80%;
+}
+.title-quienes{
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.text-quienes{
+    padding: 20px;
+    text-align: justify;
+}
+/*div principal horarios*/
+.horarios-container-two{
+    display: flex;
+    flex-direction: row;
+}
+.horarios{
+    flex: 0 0 50%;
+    padding: 20px;
+}
+.img-horarios{
+    flex: 0 0 50%;
+    padding: 20px;
+}
+.title-horarios{
+    text-align: center;
+}
+.lista-horarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin-top: 20px;
+    gap: 10px;
+}
+/* Mobile no ve estas img (350px a 650px) */
+@media screen and (min-width: 350px) and (max-width: 650px){
+    .img-main-two{
+        display: none;
+    }
+    .img-main-three{
+        display: none;
+    }
+}
+/*Estilos del Footer*/
+.footer-container{
+    background-color: rgb(162, 227, 247);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.email-form{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.email-input{
+    text-align: center;
+}
+.social-container{
+    display: flex;
+}
+.seguinos{
+    padding: 5px;
+}
+.footer-text{
+    font-style: italic;
+    font-size: 20px;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+}
+.social-links-list{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 10px;
+}
+.link-footer{
+    text-decoration: none;
+    color: rgb(231, 12, 147);
 }
