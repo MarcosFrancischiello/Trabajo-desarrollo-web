@@ -58,6 +58,8 @@ h1{
 }
 /*div principal*/
 .content-container{
+    display: flex;
+    flex-direction: column;
     flex: 0 0 80%;
 }
 .title-quienes{
@@ -73,6 +75,11 @@ h1{
 .horarios-container-two{
     display: flex;
     flex-direction: row;
+}
+@media screen and (min-width: 350px) and (max-width: 750px){
+    .horarios-container-two{
+        height: 200px;
+    }
 }
 .horarios{
     flex: 0 0 50%;
@@ -94,13 +101,81 @@ h1{
     gap: 10px;
 }
 /* Mobile no ve estas img (350px a 650px) */
-@media screen and (min-width: 350px) and (max-width: 650px){
+@media screen and (min-width: 350px) and (max-width: 750px){
     .img-main-two{
         display: none;
     }
     .img-main-three{
         display: none;
     }
+}
+
+@media screen and (min-width: 750px){
+    .main-container{
+        flex-direction: row;
+    }
+
+    .img-main-one{
+        flex-basis: 20%;
+        padding: 20px;
+    }
+    .img-one{
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    .content-section{
+        display: flex;
+        flex-direction: row;
+        flex-basis: 10%;
+    }
+
+    .text-section{
+        flex: 0 0 40%;
+    }
+    .title-quienes{
+        font-size: 40px;
+        text-align: center;
+    }
+    .text-quienes{
+        text-align: left;
+        font-size: large;
+    }
+
+
+
+
+    .img-section{
+        flex: 0 0 60%;
+    }
+    .horarios-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .horarios-container-two{
+        flex-basis: 50%;
+    }
+    .title-horarios{
+        font-size: 40px;
+    }
+    .lista-horarios{
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    .img-main-two{
+        padding: 20px;
+        flex-basis: 50%;
+    }
+
+
+
+
+    .img-main-three{
+        padding: 20px;
+        flex-basis: 70%;
+    }
+
 }
 /*Estilos del Footer*/
 .footer-container{
@@ -124,22 +199,32 @@ h1{
 }
 .seguinos{
     padding: 5px;
+    flex-basis: 50%;
 }
 .footer-text{
     font-style: italic;
+    text-align: center;
     font-size: 20px;
 }
 .social-links{
     display: flex;
     align-items: center;
+    flex-basis: 50%;
+
 }
 .social-links-list{
     display: flex;
     list-style: none;
     text-decoration: none;
     gap: 10px;
+    width: 100%;
 }
 .link-footer{
     text-decoration: none;
     color: rgb(231, 12, 147);
+}
+@media screen and (min-width: 450px){
+    .social-links-list{
+        justify-content: space-around;
+    }
 }
