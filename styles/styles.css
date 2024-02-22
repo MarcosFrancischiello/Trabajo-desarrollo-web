@@ -51,13 +51,17 @@ h1{
     display: flex;
     flex-direction: column;
     background-color: #55b5f9;
+    padding: 20px;
 }
 .img-one{
     height: 150px;
     object-fit: cover;
 }
+
+
+
 /*div principal*/
-.content-container{
+.content-section{
     display: flex;
     flex-direction: column;
     flex: 0 0 80%;
@@ -71,23 +75,46 @@ h1{
     padding: 20px;
     text-align: justify;
 }
+
+
+
 /*div principal horarios*/
+.horarios-container{
+    display: flex;
+    flex-direction: column;
+}
 .horarios-container-two{
     display: flex;
     flex-direction: row;
 }
-@media screen and (min-width: 350px) and (max-width: 750px){
-    .horarios-container-two{
-        height: 200px;
-    }
-}
 .horarios{
+    display: flex;
+    flex-direction: column;
     flex: 0 0 50%;
     padding: 20px;
 }
-.img-horarios{
+.div-title-horarios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 30%;
+}
+.div-lista-horarios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 70%;
+}
+.img-main-two{
+    display: flex;
     flex: 0 0 50%;
     padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.img-two{
+    max-height: 250px;
+    object-fit: cover;
 }
 .title-horarios{
     text-align: center;
@@ -95,88 +122,46 @@ h1{
 .lista-horarios{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     list-style: none;
-    margin-top: 20px;
     gap: 10px;
 }
-/* Mobile no ve estas img (350px a 650px) */
-@media screen and (min-width: 350px) and (max-width: 750px){
-    .img-main-two{
-        display: none;
-    }
+.img-main-three{
+    padding: 20px;
+}
+.img-three{
+    object-fit: cover;
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+.img-three{
+    max-height: 150px;
+}
+}
+/* Mobile no ve esta img (350px a 576px) */
+@media screen and (min-width: 350px) and (max-width: 575px){
     .img-main-three{
         display: none;
     }
 }
-
-@media screen and (min-width: 750px){
-    .main-container{
-        flex-direction: row;
-    }
-
-    .img-main-one{
-        flex-basis: 20%;
-        padding: 20px;
-    }
-    .img-one{
-        height: 100%;
-        object-fit: cover;
-    }
-
-
-    .content-section{
-        display: flex;
-        flex-direction: row;
-        flex-basis: 10%;
-    }
-
-    .text-section{
-        flex: 0 0 40%;
-    }
-    .title-quienes{
-        font-size: 40px;
-        text-align: center;
-    }
-    .text-quienes{
-        text-align: left;
-        font-size: large;
-    }
-
-
-
-
-    .img-section{
-        flex: 0 0 60%;
-    }
+@media screen and (min-width: 768px){
     .horarios-container{
-        display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
     .horarios-container-two{
-        flex-basis: 50%;
+        flex: 0 0 60%;
     }
-    .title-horarios{
-        font-size: 40px;
+    .img-main-three{
+        flex: 0 0 40%;
     }
-    .lista-horarios{
-        font-size: 20px;
-        margin-top: 0px;
+    .horarios{
+        flex: 0 0 30%;
     }
     .img-main-two{
-        padding: 20px;
-        flex-basis: 50%;
-    }
-
-
-
-
-    .img-main-three{
-        padding: 20px;
-        flex-basis: 70%;
+        flex: 0 0 70%;
     }
 
 }
+
 /*Estilos del Footer*/
 .footer-container{
     background-color: rgb(162, 227, 247);
