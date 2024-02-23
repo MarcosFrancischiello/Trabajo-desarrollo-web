@@ -272,6 +272,7 @@ h1{
 
 
 /*Main pagina habitaciones*/
+
 .main-section{
     display: flex;
     flex-direction: column;
@@ -281,13 +282,6 @@ h1{
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-.title-text{
-    text-align: center;
-}
-.description-text{
-    padding: 10px;
-    text-align: justify;
 }
 .room-container{
     display: flex;
@@ -301,37 +295,36 @@ h1{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    gap: 10px;
-}
-
-
-
-
-
-
-.room-info-2{
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-}
-.title-text-2{
-    text-align: center;
-}
-.description-text-2{
-    padding: 10px;
-    text-align: justify;
+    gap: 5px;
 }
 .room-container-2{
     display: flex;
     flex-direction: row;
 }
-.room-description-2{
-    flex-basis: 60%;
+.image{
+    padding: 8px;
 }
-.room-images-container-2{
-    flex-basis: 40%;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    gap: 10px;
+/*Estilos Titulo y parrafos main pagina Habitaciones*/
+.title-text{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.description-text{
+    font-size: 1rem;
+    padding: 10px;
+    text-align: justify;
+}
+@media screen and (min-width: 576px){
+    .room-images-container{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+}
+@media screen and (min-width: 999px){
+    .room-images-container{
+        flex-basis: 80%;
+    }
+    .room-description{
+        flex-basis: 30%;
+    }
 }
