@@ -1,0 +1,172 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #033860;
+    padding: 20px;
+}
+p {
+    font-size: 2.5vh;
+    text-align: justify;
+    color: rgb(196, 185, 171);
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.img-one {
+    max-height: 150px;
+    object-fit: cover;
+    object-position: center calc(65%);
+}
+.content-section {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 80%;
+}
+.title {
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(196, 185, 171);
+    padding: 10px;
+}
+.text-quienes {
+    padding: 20px;
+    text-align: justify;
+    text-align: left;
+    height: 100%;
+}
+.horarios-container {
+    display: flex;
+    flex-direction: column;
+}
+.horarios-container-two {
+    display: flex;
+    flex-direction: row;
+}
+.horarios {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 50%;
+}
+.div-title-horarios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 30%;
+}
+.div-lista-horarios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 70%;
+}
+.img-main-two {
+    display: flex;
+    flex: 0 0 50%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.img-two {
+    max-height: 200px;
+}
+.title-horarios {
+    text-align: center;
+}
+.lista-horarios {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+    gap: 10px;
+}
+.li-horarios {
+    font-size: 2vh;
+    color: rgb(196, 185, 171);
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.img-main-three {
+    padding: 20px;
+}
+.img-three {
+    object-fit: cover;
+    max-height: 250px;
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .img-three {
+        max-height: 150px;
+    }
+}
+@media screen and (min-width: 350px) and (max-width: 575px) {
+    .img-main-three {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .horarios-container {
+        flex-direction: row;
+    }
+    .horarios-container-two {
+        flex: 0 0 60%;
+    }
+    .img-main-three {
+        flex: 0 0 40%;
+    }
+    .horarios {
+        flex: 0 0 30%;
+    }
+    .img-main-two {
+        flex: 0 0 70%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .content-section {
+        flex-direction: row;
+    }
+    .text-section {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 30%;
+    }
+    .div-title-quienes {
+        flex-basis: 10%;
+    }
+    .div-text-quienes {
+        flex-basis: 90%;
+    }
+    .img-four {
+        height: 150px;
+        object-position: center calc(45%);
+    }
+    .horarios-container {
+        flex-direction: column;
+        flex-basis: 70%;
+    }
+    .horarios-container-two {
+        flex: 0 0 40%;
+    }
+    .img-main-three {
+        flex: 0 0 60%;
+    }
+    .horarios {
+        flex: 0 0 30%;
+    }
+    .lista-horarios {
+        width: 100%;
+        gap: 30px;
+    }
+    .img-main-two {
+        flex: 0 0 70%;
+    }
+}
+@media screen and (min-width: 350px) and (max-width: 1199px) {
+    .img-main-four {
+        display: none;
+    }
+}

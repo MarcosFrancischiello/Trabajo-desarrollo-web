@@ -1,0 +1,84 @@
+.footer-container {
+    background-color: #77B6EA;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.email-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.email-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+.email-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.email-submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #042549;
+    color: #fff;
+    cursor: pointer;
+}
+
+.email-submit:hover {
+    background-color: #0056b3;
+}
+.social-container {
+    display: flex;
+}
+
+.seguinos {
+    padding: 5px;
+    flex-basis: 50%;
+}
+
+.footer-text {
+    font-size: 2rem;
+    color: #042549;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    flex-basis: 50%;
+
+}
+
+.social-links-list {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 10px;
+    width: 100%;
+}
+
+.link-footer {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #042549;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
+}
+
+@media screen and (min-width: 450px) {
+    .social-links-list {
+        justify-content: space-around;
+    }
+}
