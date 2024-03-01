@@ -1,5 +1,5 @@
 .footer-container {
-    background-color: #77B6EA;
+    background-color: #77b6ea;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -50,6 +50,9 @@
     font-size: 2rem;
     color: #042549;
     text-align: center;
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .social-links {
