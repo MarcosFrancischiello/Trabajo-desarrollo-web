@@ -1,0 +1,35 @@
+.main-valoraciones {
+    @include flex-layout (row, space-between, center, 20px)
+}
+.section-contacto {
+    @include flex-layout (column, center, center, 10px)
+}
+.datos {
+    @extend .text;
+    max-width: 220px;
+}
+.div-datos{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.main-datos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+@media screen and (min-width:576px) {
+    .main-datos{
+        flex-direction: row;
+        margin: 20px 20px;
+    }
+    .iframe{
+        width: 100%;
+    }
+
+}
+@media screen and (min-width:350px) and (max-width:575px) {
+    .section-valoraciones {
+        display: none;
+    }
+}

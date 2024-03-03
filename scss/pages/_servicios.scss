@@ -1,0 +1,39 @@
+
+.main-container-comidas{
+    @extend .main-container;
+    gap: 20px;
+}
+.div-servicios{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.div-servicios-two{
+    @extend .div-servicios;
+}
+.article-comidas{
+    @include flex-layout(row, center, center, 10px)
+}
+.servicios-img{
+    height: 100px;
+    width: 100px;
+}
+.article-comidas-two{
+    @include flex-layout(row-reverse, center, center, 10px)
+}
+.article-text{
+    flex-basis: 70%
+}
+@media screen and (min-width: 576px) {
+    .div-servicios{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .article-comidas{
+        flex-direction: column-reverse;
+    }
+    .article-comidas-two{
+        flex-direction: column-reverse;
+    }
+}
+

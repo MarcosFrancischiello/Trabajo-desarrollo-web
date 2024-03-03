@@ -12,7 +12,13 @@ img {
   border: 2px solid beige;
 }
 
-.text {
+iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.text, .datos {
   font-size: 2.5vh;
   text-align: justify;
   color: black;
@@ -167,11 +173,12 @@ h1 {
     justify-content: space-around;
   }
 }
-.main-container {
+.main-container, .main-container-comidas {
   display: flex;
   flex-direction: column;
   background-color: #033860;
   padding: 20px;
+  gap: 10px;
 }
 
 .img-one {
@@ -261,6 +268,7 @@ h1 {
 }
 
 .li-horarios {
+  list-style: none;
   font-size: 2vh;
   color: black;
   font-family: "Dancing Script", cursive;
@@ -468,6 +476,99 @@ h1 {
   }
   .comidas-img-container {
     max-height: 250px;
+  }
+}
+.main-container-comidas {
+  gap: 20px;
+}
+
+.div-servicios, .div-servicios-two {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.article-comidas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.servicios-img {
+  height: 100px;
+  width: 100px;
+}
+
+.article-comidas-two {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.article-text {
+  flex-basis: 70%;
+}
+
+@media screen and (min-width: 576px) {
+  .div-servicios, .div-servicios-two {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .article-comidas {
+    flex-direction: column-reverse;
+  }
+  .article-comidas-two {
+    flex-direction: column-reverse;
+  }
+}
+.main-valoraciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  gap: 20px;
+}
+
+.section-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.datos {
+  max-width: 220px;
+}
+
+.div-datos {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.main-datos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (min-width: 576px) {
+  .main-datos {
+    flex-direction: row;
+    margin: 20px 20px;
+  }
+  .iframe {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 575px) {
+  .section-valoraciones {
+    display: none;
   }
 }
 
