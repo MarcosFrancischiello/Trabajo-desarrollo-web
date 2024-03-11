@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Acme&family=Cinzel:wght@500&family=Cookie&family=Dancing+Script:wght@700&family=Josefin+Sans:ital,wght@1,500&family=Playfair+Display:ital,wght@1,500&display=swap"
         rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
@@ -19,19 +20,35 @@
             <h1>Refugio Patagonia Azul</h1>
         </div>
         <div class="header-img">
-            <img src="../img/img-main-4.jpg" alt="" class="img-header">
+            <img src="../img/img-header.jpg" alt="" class="img-header">
         </div>
-        <div class="header-nav">
-            <nav class="header-navigation">
-                <ul class="nav-list">
-                    <li><a href="../index.html" class="nav-link">Home</a></li>
-                    <li><a href="./habitaciones.html" class="nav-link">Habitaciones</a></li>
-                    <li><a href="./comidas.html" class="nav-link">Comidas</a></li>
-                    <li><a href="./servicios.html" class="nav-link">Servicios</a></li>
-                    <li><a href="./contacto.html" class="nav-link">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand link-light" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav align-items-center w-100 justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link active link-warning" aria-current="page"
+                                href="./habitaciones.html">Habitaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" aria-current="page" href="./comidas.html">Comidas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" aria-current="page"
+                                href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" aria-current="page" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <div class="main-container">
@@ -45,7 +62,7 @@
                     </div>
                     <div class="room-container">
                         <div class="room-description">
-                            <p class="text">Sumérgete en la comodidad y el encanto de nuestra habitación
+                            <p class="text medidas">Sumérgete en la comodidad y el encanto de nuestra habitación
                                 doble acogedora, diseñada para parejas en busca de una escapada romántica. Con una cama
                                 queen-size y una decoración cálida y acogedora, esta habitación es el refugio perfecto
                                 después de un día de exploración. Además, disfruta de servicios adicionales como desayuno
@@ -73,7 +90,7 @@
                     </div>
                     <div class="room-container-2">
                         <div class="room-description">
-                            <p class="text">Experimenta el lujo y la comodidad en nuestra suite familiar
+                            <p class="text medidas">Experimenta el lujo y la comodidad en nuestra suite familiar
                                 espaciosa, ideal para familias y grupos pequeños. Con dos habitaciones separadas, cada
                                 una con su propio baño completo, esta suite ofrece privacidad y espacio más que suficiente
                                 para todos. Disfruta de servicios exclusivos como una cocina totalmente equipada, área de
@@ -102,7 +119,7 @@
                     </div>
                     <div class="room-container">
                         <div class="room-description">
-                            <p class="text">Sumérgete en el lujo absoluto con nuestra habitación deluxe
+                            <p class="text medidas">Sumérgete en el lujo absoluto con nuestra habitación deluxe
                                 premium, diseñada para aquellos que buscan una experiencia inolvidable. Con tres dormitorios
                                 amplios y elegantemente decorados, cada uno con baño privado, esta suite es perfecta para grupos
                                 más grandes o familias numerosas. Disfruta de servicios exclusivos como una sala de estar
@@ -131,7 +148,7 @@
                     </div>
                     <div class="room-container-2">
                         <div class="room-description">
-                            <p class="text">Explora la cabaña más exclusiva de nuestro refugio,donde el lujo
+                            <p class="text medidas">Explora la cabaña más exclusiva de nuestro refugio,donde el lujo
                                 y la comodidad se fusionan con la majestuosidad de la naturaleza. Con el doble de
                                 espacio y servicios premium, esta cabaña redefine la experiencia de hospedaje,
                                 ofreciéndote una estancia inigualable en el corazón de la Patagonia. Bienvenido a un
@@ -180,5 +197,7 @@
             </div>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
 </html>

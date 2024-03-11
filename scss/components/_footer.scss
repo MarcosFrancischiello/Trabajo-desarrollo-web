@@ -39,6 +39,12 @@
 }
 .social-container {
     display: flex;
+    gap: 10px;
+}
+@media screen and (min-width: 350px) and (max-width: 575px) {
+    .social-container{
+        flex-direction: column;
+    }
 }
 
 .seguinos {
@@ -47,6 +53,7 @@
 }
 
 .footer-text {
+    margin: 0;
     font-size: 2rem;
     color: #042549;
     text-align: center;
@@ -59,13 +66,13 @@
     display: flex;
     align-items: center;
     flex-basis: 50%;
-
 }
 
 .social-links-list {
     display: flex;
     list-style: none;
     text-decoration: none;
+    justify-content: space-around;
     gap: 10px;
     width: 100%;
 }
@@ -78,10 +85,4 @@
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: italic;
-}
-
-@media screen and (min-width: 450px) {
-    .social-links-list {
-        justify-content: space-around;
-    }
 }

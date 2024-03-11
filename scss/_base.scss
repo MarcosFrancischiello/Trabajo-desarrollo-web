@@ -10,10 +10,16 @@ img {
     border-radius: 10px;
     border: 2px solid beige;
 }
-iframe{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
+@mixin item-style($background, $color, $size, $text, $family, $weight, $style, $margin, $padding,){
+    background-color: $background;
+    color: $color;
+    font-size: $size;
+    text-align: $text;
+    font-family: $family;
+    font-weight: $weight;
+    font-style: $style;
+    margin: $margin;
+    padding: $padding;
 }
 .text{
     font-size: 2.5vh;
@@ -26,6 +32,7 @@ iframe{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 10px 20px #000000;
+    margin: 0;
 }
 @mixin flex-layout($direction, $justify, $align, $gap) {
     display: flex;
@@ -33,4 +40,14 @@ iframe{
     justify-content: $justify;
     text-align: $align;
     gap: $gap;
+}
+.title {
+    text-align: center;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(196, 185, 171);
+    padding: 10px;
+    margin: 0;
 }

@@ -2,12 +2,19 @@ header {
     display: flex;
     flex-direction: column;
 }
-
+h1 {
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vh;
+    background-color: #033860;
+    margin: 0 0 0 0 !important;
+    color: #77b6ea !important;
+}
 .header-title {
     flex-basis: 20%;
     text-align: center;
 }
-
 .header-img {
     height: 150px;
 }
@@ -15,32 +22,16 @@ header {
     border: none;
     border-radius: 0px;
 }
-
-.header-nav {
-    flex-basis: 20%;
+.navbar{
+    background-color: #5cace9;
 }
-h1 {
-    font-family: "Acme", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4vh;
-    background-color: #042549;
-    color: #39b3c9;
+.nav-link{
+    font-family: "Dancing Script";
 }
-.nav-list {
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    list-style: none;
-    background-color: #39b3c9;
-    padding: 10px;
+.navbar-brand{
+    @extend .nav-link
 }
-.nav-link {
-    color: #042549;
-    text-decoration: none;
-    font-size: 1rem;
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: italic;
+.navbar-toggler{
+    border: none;
+    box-shadow: none !important;
 }

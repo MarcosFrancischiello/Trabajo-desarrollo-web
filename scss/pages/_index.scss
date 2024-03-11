@@ -5,165 +5,45 @@
     padding: 20px;
     gap: 10px;
 }
-
-.img-one {
+.img-main-one{
     max-height: 150px;
-    object-fit: cover;
     object-position: center calc(65%);
 }
-.content-section {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    flex: 0 0 80%;
-}
-.title {
-    text-align: center;
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    color: rgb(196, 185, 171);
-    padding: 10px;
-}
-.text-quienes {
-    margin: 0 15px;
-    padding: 20px;
-    text-align: justify;
-    text-align: left;
-}
-.horarios-container {
-    display: flex;
-    flex-direction: column;
-}
-.horarios-container-two {
-    display: flex;
-    flex-direction: row;
-}
-.horarios {
-    display: flex;
-    flex-direction: column;
-    flex: 0 0 50%;
-}
-.div-title-horarios {
-    display: flex;
+
+
+
+
+.item-div{
     justify-content: center;
-    align-items: center;
 }
-.div-lista-horarios {
-    background-color: beige;
+.item-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    @include item-style (beige, black, 2vh, center, "Dancing Script", 700, italic, 0 ,10px);
+    list-style: none;
     border-radius: 10px;
     box-shadow: 0 10px 20px #000000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 200px;
 }
-.img-main-two {
-    display: flex;
-    flex: 0 0 50%;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-}
-.img-two {
-    max-height: 250px;
-}
-.title-horarios {
-    text-align: center;
-}
-.lista-horarios {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    list-style: none;
-    gap: 10px;
-}
-.li-horarios {
-    list-style: none;
-    font-size: 2vh;
-    color: black;
-    font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-}
-.img-main-three {
-    padding: 20px;
-}
-.img-three {
-    object-fit: cover;
-    max-height: 250px;
-}
-@media screen and (min-width: 576px) and (max-width: 767px) {
-    .img-three {
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 350px) and (max-width: 575px) {
+    .img-main-two{
         max-height: 150px;
     }
-}
-@media screen and (min-width: 350px) and (max-width: 575px) {
-    .img-main-three {
+    .img-main-three{
         display: none;
     }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-    .horarios-container {
-        flex-direction: row;
-    }
-    .horarios-container-two {
-        flex: 0 0 60%;
-    }
-    .img-main-three {
-        flex: 0 0 40%;
-    }
-    .horarios {
-        flex: 0 0 30%;
-    }
-    .img-main-two {
-        flex: 0 0 70%;
-    }
-}
-@media screen and (min-width: 1200px) {
-    .content-section {
-        flex-direction: row;
-    }
-    .text-section {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 30%;
-    }
-    .div-title-quienes {
-        flex-basis: 10%;
-    }
-    .div-text-quienes {
-        flex-basis: 90%;
-    }
-    .img-four {
-        height: 150px;
-        object-position: center calc(45%);
-    }
-    .horarios-container {
-        flex-direction: column;
-        flex-basis: 70%;
-    }
-    .horarios-container-two {
-        flex: 0 0 40%;
-    }
-    .img-main-three {
-        flex: 0 0 60%;
-    }
-    .horarios {
-        flex: 0 0 30%;
-    }
-    .lista-horarios {
-        width: 100%;
-        gap: 30px;
-    }
-    .img-main-two {
-        flex: 0 0 70%;
-    }
-}
-@media screen and (min-width: 350px) and (max-width: 1199px) {
-    .img-main-four {
+    .img-main-four{
         display: none;
     }
 }

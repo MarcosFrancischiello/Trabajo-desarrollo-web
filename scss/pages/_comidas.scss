@@ -1,35 +1,28 @@
-.main-div{
+.main-div {
     padding: 20px;
     gap: 10px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-.main-div-two{
+
+.main-div-two {
     @extend .main-div;
 }
-.comidas-img-container{
+
+.comidas-img-container {
     text-align: center;
     gap: 10px;
     display: flex;
-    flex-basis: 50%;
+    justify-content: space-around;
 }
-.p-container{
-    flex-basis: 50%;
+
+.p-container {
+    display: flex;
+    align-items: center;
+    max-width: 1300px;
 }
 .img-comida{
-    max-height: 300px;
-}
-@media screen and (min-width: 992px) {
-.main-div{
-    flex-direction: row-reverse;
-}
-.main-div-two{
-    flex-direction: row;
-}
-.p-container{
-    margin-top: 0px;
-}
-.comidas-img-container{
-    max-height: 250px;
-}
+    max-width: 450px;
+    max-height: 550px;
 }
