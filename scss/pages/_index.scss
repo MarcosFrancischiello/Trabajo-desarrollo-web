@@ -12,8 +12,14 @@
 
 
 
-
+.main-horarios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
 .item-div{
+    display: flex;
     justify-content: center;
 }
 .item-ul{
@@ -26,24 +32,13 @@
     box-shadow: 0 10px 20px #000000;
     max-width: 200px;
 }
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 350px) and (max-width: 575px) {
-    .img-main-two{
-        max-height: 150px;
-    }
-    .img-main-three{
-        display: none;
-    }
-    .img-main-four{
-        display: none;
-    }
+.img-horarios{
+    max-height: 250px;
 }
+.img-div{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+

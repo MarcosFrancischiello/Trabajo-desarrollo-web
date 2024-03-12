@@ -186,7 +186,15 @@ h1 {
   object-position: center 65%;
 }
 
+.main-horarios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
 .item-div {
+  display: flex;
   justify-content: center;
 }
 
@@ -209,17 +217,16 @@ h1 {
   max-width: 200px;
 }
 
-@media screen and (min-width: 350px) and (max-width: 575px) {
-  .img-main-two {
-    max-height: 150px;
-  }
-  .img-main-three {
-    display: none;
-  }
-  .img-main-four {
-    display: none;
-  }
+.img-horarios {
+  max-height: 250px;
 }
+
+.img-div {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
 .main-section {
   display: flex;
   flex-direction: column;
@@ -239,7 +246,7 @@ h1 {
 
 .room-container, .room-container-2 {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
   gap: 10px;
 }
 
@@ -260,7 +267,7 @@ h1 {
 }
 
 .room-container-2 {
-  flex-direction: row;
+  flex-direction: column;
 }
 
 /*Estilos Titulo y parrafos main pagina Habitaciones*/
@@ -279,17 +286,6 @@ h1 {
   text-align: justify;
 }
 
-@media screen and (min-width: 350px) and (max-width: 475px) {
-  .room-images-container {
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-  }
-}
-@media screen and (min-width: 476px) and (max-width: 767px) {
-  .room-container, .room-container-2 {
-    flex-direction: column;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 998px) {
   .room-images-container {
     flex-basis: 50%;
@@ -301,6 +297,12 @@ h1 {
 @media screen and (min-width: 992px) {
   .medidas {
     max-width: 300px;
+  }
+  .room-container, .room-container-2 {
+    flex-direction: row-reverse;
+  }
+  .room-container-2 {
+    flex-direction: row;
   }
   .room-images-container {
     grid-template-columns: auto auto;
