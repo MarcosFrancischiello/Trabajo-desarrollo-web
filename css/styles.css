@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -35,6 +36,21 @@ img {
   color: rgb(196, 185, 171);
   padding: 10px;
   margin: 0;
+}
+
+.whatsapp-container {
+  position: fixed;
+  bottom: 70px;
+  right: 5px;
+  z-index: 9999;
+}
+
+.whatsapp-icon {
+  width: 50px; /* Tamaño del icono */
+  height: 50px;
+  background-color: none;
+  border: none;
+  border-radius: 0;
 }
 
 header {
@@ -159,18 +175,35 @@ h1 {
   list-style: none;
   text-decoration: none;
   justify-content: space-around;
-  gap: 10px;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  gap: 5px;
 }
 
 .link-footer {
   font-size: 1rem;
   text-decoration: none;
-  color: #042549;
+  color: darkblue;
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: italic;
+  margin: 0;
+}
+
+.link-logo {
+  display: flex;
+  text-decoration: none;
+  gap: 5px;
+  color: blueviolet;
+}
+
+.logo {
+  color: blueviolet;
+  border: none;
+  width: 25px;
+  height: 25px;
 }
 
 .main-container {
