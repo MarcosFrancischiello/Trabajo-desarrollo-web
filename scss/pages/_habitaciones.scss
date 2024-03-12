@@ -3,6 +3,57 @@
     flex-direction: column;
     gap: 30px;
 }
+.main-form{
+    display: flex;
+    justify-content: center;
+}
+.form-habitaciones{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    border-radius: 5px;
+    border: 2px solid white;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    padding: 10px;
+}
+.label-habitaciones{
+    font-family: "Acme";
+    font-style: italic;
+    text-align: center;
+}
+.input-habitaciones{
+    justify-content: center;
+    min-width: 250px;
+    max-width: 250px;
+}
+.habitacion-submit{
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #77b6ea;
+    min-width: 250px;
+}
+.habitacion-submit:hover{
+    background-color: darkblue;
+}
+@media screen and (min-width: 767px){
+    .form-habitaciones{
+        flex-direction: row;
+    }
+    .input-habitaciones{
+        min-width: 0;
+        max-width: 200px;
+    }
+    .habitacion-submit{
+        min-width: 50px;
+    }
+}
+
+
+
 .image{
     max-height: 250px;
     max-width: 500px;

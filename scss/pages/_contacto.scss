@@ -64,6 +64,9 @@ iframe {
     color: white;
     max-width: 350px;
 }
+.boton:hover{
+    background-color: #77b6ea;
+}
 @media screen and (min-width:576px) {
     .main-datos {
         flex-direction: row;

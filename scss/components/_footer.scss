@@ -82,8 +82,8 @@
 .link-footer {
     font-size: 1rem;
     text-decoration: none;
-    color: darkblue;
-    font-family: "Josefin Sans", sans-serif;
+    color: #042549;
+    font-family: "Acme";
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: italic;
@@ -98,6 +98,7 @@
 .logo{
     color: blueviolet;
     border: none;
+    border-radius: 0;
     width: 25px;
     height: 25px;
 }
