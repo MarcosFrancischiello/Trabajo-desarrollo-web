@@ -1,37 +1,43 @@
 header {
     display: flex;
     flex-direction: column;
-}
-h1 {
-    font-family: "Acme", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4vh;
-    background-color: #033860;
-    margin: 0 0 0 0 !important;
-    color: #77b6ea !important;
-}
-.header-title {
-    flex-basis: 20%;
-    text-align: center;
-}
-.header-img {
-    height: 150px;
-}
-.img-header{
-    border: none;
-    border-radius: 0px;
-}
-.navbar{
-    background-color: #5cace9;
-}
-.nav-link{
-    font-family: "Dancing Script";
-}
-.navbar-brand{
-    @extend .nav-link
-}
-.navbar-toggler{
-    border: none;
-    box-shadow: none !important;
+    .header-title {
+        flex-basis: 20%;
+        text-align: center;
+        h1 {
+            font-family: "Acme", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 4vh;
+            background-color: #033860;
+            margin: 0 0 0 0 !important;
+            color: #77b6ea !important;
+        }
+    }
+    .header-img {
+        height: 150px;
+        .img-header{
+            border: none;
+            border-radius: 0px;
+        }
+    }
+    .navbar{
+        background-color: #5cace9;
+        .navbar-toggler{
+            border: none;
+            box-shadow: none !important;
+        }
+        .nav-item{
+            width: 100%;
+            max-width: 150px;
+            text-align: center;
+            &:hover{
+                border: 1px groove white;
+                border-radius: 20px;
+            }
+            .nav-link{
+                font-family: "Dancing Script";
+            }
+        }
+    }
 }

@@ -3,102 +3,98 @@
     display: flex;
     flex-direction: column;
     padding: 10px;
-}
-.email-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-}
-.email-label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    text-align: center;
-}
-.email-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    text-align: center;
-}
-.email-submit {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #042549;
-    color: #fff;
-    cursor: pointer;
-}
+    .email-form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        .email-label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .email-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .email-submit {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #042549;
+            color: #fff;
+            cursor: pointer;
+            &:hover {
+                background-color: #0056b3;
+            }
+        }
+    }
+    .social-container {
+        display: flex;
+        gap: 10px;
+        .seguinos {
+            padding: 5px;
+            flex-basis: 50%;
+            .footer-text {
+                margin: 0;
+                font-size: 2rem;
+                color: #042549;
+                text-align: center;
+                font-family: "Cookie", cursive;
+                font-weight: 400;
+                font-style: italic;
+            }
+        }
+        .social-links {
+            display: flex;
+            align-items: center;
+            flex-basis: 50%;
+            .social-links-list {
+                display: flex;
+                list-style: none;
+                text-decoration: none;
+                justify-content: space-around;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                gap: 5px;
+                .link-logo{
+                    display: flex;
+                    text-decoration: none;
+                    gap: 5px;
+                    color: blueviolet;
+                    .logo{
+                        color: blueviolet;
+                        border: none;
+                        border-radius: 0;
+                        width: 25px;
+                        height: 25px;
+                    }
+                    .link-footer {
+                        font-size: 1rem;
+                        text-decoration: none;
+                        color: #042549;
+                        font-family: "Acme";
+                        font-optical-sizing: auto;
+                        font-weight: 500;
+                        font-style: italic;
+                        margin: 0;
+                    }
+                }
+            }
+            
+        }
+    }
 
-.email-submit:hover {
-    background-color: #0056b3;
-}
-.social-container {
-    display: flex;
-    gap: 10px;
 }
 @media screen and (min-width: 350px) and (max-width: 575px) {
     .social-container{
         flex-direction: column;
     }
-}
-
-.seguinos {
-    padding: 5px;
-    flex-basis: 50%;
-}
-
-.footer-text {
-    margin: 0;
-    font-size: 2rem;
-    color: #042549;
-    text-align: center;
-    font-family: "Cookie", cursive;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.social-links {
-    display: flex;
-    align-items: center;
-    flex-basis: 50%;
-}
-
-.social-links-list {
-    display: flex;
-    list-style: none;
-    text-decoration: none;
-    justify-content: space-around;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    gap: 5px;
-}
-
-.link-footer {
-    font-size: 1rem;
-    text-decoration: none;
-    color: #042549;
-    font-family: "Acme";
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: italic;
-    margin: 0;
-}
-.link-logo{
-    display: flex;
-    text-decoration: none;
-    gap: 5px;
-    color: blueviolet;
-}
-.logo{
-    color: blueviolet;
-    border: none;
-    border-radius: 0;
-    width: 25px;
-    height: 25px;
 }
