@@ -13,7 +13,7 @@ img {
   border: 2px solid beige;
 }
 
-.text, .datos {
+.text, .main-datos .div-datos .datos {
   font-size: 2.5vh;
   text-align: justify;
   color: black;
@@ -53,6 +53,39 @@ img {
   border-radius: 0;
 }
 
+.container-tittle {
+  opacity: 0;
+  animation: enterFromOutside 1.5s forwards;
+}
+
+@keyframes enterFromOutside {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+.container-tittle-two {
+  animation: enterFromOutside 1.8s forwards;
+}
+
+.container-text-right {
+  animation: enterFromOutsideR 1.8s forwards;
+}
+
+@keyframes enterFromOutsideR {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
 header {
   display: flex;
   flex-direction: column;
@@ -214,8 +247,7 @@ h1 {
   padding: 20px;
   gap: 15px;
 }
-
-.img-main-one {
+.main-container .img-main-one {
   max-height: 150px;
   object-position: center 65%;
 }
@@ -224,15 +256,13 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
-
-.item-div {
+.main-horarios .item-div {
   display: flex;
   justify-content: center;
 }
-
-.item-ul {
+.main-horarios .item-div .item-ul {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -251,14 +281,54 @@ h1 {
   max-width: 200px;
 }
 
-.img-horarios {
-  max-height: 250px;
-}
-
-.img-div {
+.main-form {
   display: flex;
-  justify-content: space-around;
-  gap: 20px;
+  justify-content: center;
+}
+.main-form .form-habitaciones {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
+  border-radius: 5px;
+  border: 2px solid rgb(135, 221, 192);
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  padding: 10px;
+}
+.main-form .form-habitaciones .label-habitaciones {
+  font-family: "Acme";
+  font-style: italic;
+  text-align: center;
+}
+.main-form .form-habitaciones .input-habitaciones {
+  text-align: center;
+  justify-content: center;
+  width: 200px;
+  max-width: 100%;
+}
+.main-form .form-habitaciones .habitacion-submit {
+  border-radius: 30px;
+  border: none;
+  color: white;
+  background-color: #77b6ea;
+  width: 100%;
+  max-width: 150px;
+}
+.main-form .form-habitaciones .habitacion-submit:hover {
+  background-color: darkblue;
+}
+@media screen and (min-width: 992px) {
+  .main-form .form-habitaciones {
+    flex-direction: row;
+  }
+  .main-form .input-habitaciones {
+    max-width: 200px;
+  }
+  .main-form .habitacion-submit {
+    min-width: 50px;
+  }
 }
 
 .main-section {
@@ -266,70 +336,15 @@ h1 {
   flex-direction: column;
   gap: 30px;
 }
-
-.main-form {
-  display: flex;
-  justify-content: center;
-}
-
-.form-habitaciones {
-  gap: 10px;
-  display: flex;
-  flex-direction: column;
-  background-color: beige;
-  border-radius: 5px;
-  border: 2px solid white;
-  justify-content: center;
-  align-items: center;
-  min-width: 300px;
-  padding: 10px;
-}
-
-.label-habitaciones {
-  font-family: "Acme";
-  font-style: italic;
-  text-align: center;
-}
-
-.input-habitaciones {
-  justify-content: center;
-  min-width: 250px;
-  max-width: 250px;
-}
-
-.habitacion-submit {
-  border-radius: 10px;
-  border: none;
-  color: white;
-  background-color: #77b6ea;
-  min-width: 250px;
-}
-
-.habitacion-submit:hover {
-  background-color: darkblue;
-}
-
-@media screen and (min-width: 767px) {
-  .form-habitaciones {
-    flex-direction: row;
-  }
-  .input-habitaciones {
-    min-width: 0;
-    max-width: 200px;
-  }
-  .habitacion-submit {
-    min-width: 50px;
-  }
-}
-.image {
-  max-height: 250px;
-  max-width: 500px;
-}
-
-.room-info {
+.main-section .room-info {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.image {
+  max-height: 250px;
+  max-width: 500px;
 }
 
 .room-container, .room-container-2 {
@@ -358,7 +373,6 @@ h1 {
   flex-direction: column;
 }
 
-/*Estilos Titulo y parrafos main pagina Habitaciones*/
 .title-text {
   text-align: center;
   font-size: 1.5rem;
@@ -433,27 +447,23 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
-.article-servicios {
+.main-servicios .article-servicios {
   display: grid;
   padding: 20px;
   gap: 20px;
 }
-
-.servicios-div {
+.main-servicios .article-servicios .servicios-div {
   display: flex;
   justify-content: center;
 }
-
-.servicios-text {
+.main-servicios .article-servicios .servicios-div .servicios-img {
+  max-width: 272px;
+}
+.main-servicios .article-servicios .servicios-text {
   display: flex;
   justify-self: center;
   align-items: center;
   max-width: 400px;
-}
-
-.servicios-img {
-  max-width: 272px;
 }
 
 .section-contacto {
@@ -464,25 +474,22 @@ h1 {
   gap: 10px;
 }
 
-.datos {
-  max-width: 220px;
-  list-style: none;
-  padding: 10px !important;
-}
-
-.div-datos {
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-}
-
 .main-datos {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-
-iframe {
+.main-datos .div-datos {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.main-datos .div-datos .datos {
+  max-width: 220px;
+  list-style: none;
+  padding: 10px !important;
+}
+.main-datos iframe {
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -492,8 +499,7 @@ iframe {
   display: flex;
   justify-content: center;
 }
-
-.form {
+.main-consultas .form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -504,31 +510,26 @@ iframe {
   width: 100%;
   max-width: 1000px;
 }
-
-.label-input {
+.main-consultas .form .label-input {
   display: flex;
   flex-direction: column;
 }
-
-.div-boton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.label-consultas {
+.main-consultas .form .label-input .label-consultas {
   font-family: "cookie", cursive;
   font-size: 1.8em;
   color: white;
 }
-
-.input-consultas {
+.main-consultas .form .label-input .input-consultas {
   border-radius: 10px;
   background-color: rgb(195, 255, 240);
   border: none;
 }
-
-.boton {
+.main-consultas .form .div-boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-consultas .form .div-boton .boton {
   width: 100%;
   background-color: rgb(28, 55, 207);
   border-radius: 20px;
@@ -536,8 +537,7 @@ iframe {
   color: white;
   max-width: 350px;
 }
-
-.boton:hover {
+.main-consultas .form .div-boton .boton:hover {
   background-color: #77b6ea;
 }
 
@@ -548,11 +548,6 @@ iframe {
   }
   .iframe {
     width: 100%;
-  }
-}
-@media screen and (min-width: 350px) and (max-width: 575px) {
-  .section-valoraciones {
-    display: none;
   }
 }
 

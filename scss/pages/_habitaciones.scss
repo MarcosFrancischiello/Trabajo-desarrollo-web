@@ -1,83 +1,79 @@
+.main-form{
+    display: flex;
+    justify-content: center;
+    .form-habitaciones{
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: beige;
+        border-radius: 5px;
+        border: 2px solid rgb(135, 221, 192);
+        justify-content: center;
+        align-items: center;
+        min-width: 300px;
+        padding: 10px;
+        .label-habitaciones{
+            font-family: "Acme";
+            font-style: italic;
+            text-align: center;
+        }
+        .input-habitaciones{
+            text-align: center;
+            justify-content: center;
+            width: 200px;
+            max-width: 100%;
+        }
+        .habitacion-submit{
+            border-radius: 30px;
+            border: none;
+            color: white;
+            background-color: #77b6ea;
+            width: 100%;
+            max-width: 150px;
+        
+            &:hover{
+                background-color: darkblue;
+            }
+        }
+    }
+    @media screen and (min-width: 992px){
+        .form-habitaciones{
+            flex-direction: row;
+        }
+        .input-habitaciones{
+            
+            max-width: 200px;
+        }
+        .habitacion-submit{
+            min-width: 50px;
+        }
+    }
+}
 .main-section {
     display: flex;
     flex-direction: column;
     gap: 30px;
-}
-.main-form{
-    display: flex;
-    justify-content: center;
-}
-.form-habitaciones{
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-    background-color: beige;
-    border-radius: 5px;
-    border: 2px solid white;
-    justify-content: center;
-    align-items: center;
-    min-width: 300px;
-    padding: 10px;
-}
-.label-habitaciones{
-    font-family: "Acme";
-    font-style: italic;
-    text-align: center;
-}
-.input-habitaciones{
-    justify-content: center;
-    min-width: 250px;
-    max-width: 250px;
-}
-.habitacion-submit{
-    border-radius: 10px;
-    border: none;
-    color: white;
-    background-color: #77b6ea;
-    min-width: 250px;
-}
-.habitacion-submit:hover{
-    background-color: darkblue;
-}
-@media screen and (min-width: 767px){
-    .form-habitaciones{
-        flex-direction: row;
-    }
-    .input-habitaciones{
-        min-width: 0;
-        max-width: 200px;
-    }
-    .habitacion-submit{
-        min-width: 50px;
+    .room-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 }
-
-
-
 .image{
     max-height: 250px;
     max-width: 500px;
 }
-
-.room-info {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
 .room-container {
     display: flex;
     flex-direction: column-reverse;
     gap: 10px;
 }
-
 .room-description {
     display: flex;
     flex-basis: 50%;
     justify-content: center;
     align-items: center;
 }
-
 .room-images-container {
     flex-basis: 50%;
     display: grid;
@@ -86,12 +82,10 @@
     justify-content: center;
     gap: 20px;
 }
-
 .room-container-2 {
     @extend .room-container;
     flex-direction: column;
 }
-/*Estilos Titulo y parrafos main pagina Habitaciones*/
 .title-text {
     text-align: center;
     font-size: 1.5rem;
@@ -101,7 +95,6 @@
     font-style: normal;
     color: rgb(196, 185, 171);
 }
-
 .description-text {
     padding: 10px;
     text-align: justify;
@@ -115,7 +108,6 @@
         flex-basis: 50%;
     }
 }
-
 @media screen and (min-width: 992px) {
     .medidas{
         max-width: 300px;

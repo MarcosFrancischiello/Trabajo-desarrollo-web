@@ -4,10 +4,10 @@
     background-color: #033860;
     padding: 20px;
     gap: 15px;
-}
-.img-main-one{
-    max-height: 150px;
-    object-position: center calc(65%);
+    .img-main-one{
+        max-height: 150px;
+        object-position: center calc(65%);
+    }
 }
 
 
@@ -16,29 +16,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
-}
-.item-div{
-    display: flex;
-    justify-content: center;
-}
-.item-ul{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    @include item-style (beige, black, 2vh, center, "Dancing Script", 700, italic, 0 ,10px);
-    list-style: none;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px #000000;
-    max-width: 200px;
-}
-.img-horarios{
-    max-height: 250px;
-}
-.img-div{
-    display: flex;
-    justify-content: space-around;
     gap: 20px;
+
+    .item-div{
+        display: flex;
+        justify-content: center;
+
+        .item-ul{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            @include item-style (beige, black, 2vh, center, "Dancing Script", 700, italic, 0 ,10px);
+            list-style: none;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px #000000;
+            max-width: 200px;
+        }
+    }
 }
-
-

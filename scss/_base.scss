@@ -64,3 +64,34 @@ img {
     border: none;
     border-radius: 0;
 }
+.container-tittle {
+    opacity: 0;
+    animation: enterFromOutside 1.5s forwards;
+}
+
+@keyframes enterFromOutside {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+.container-tittle-two{
+    animation: enterFromOutside 1.8s forwards;
+}
+.container-text-right{
+    animation: enterFromOutsideR 1.8s forwards;
+}
+@keyframes enterFromOutsideR {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
