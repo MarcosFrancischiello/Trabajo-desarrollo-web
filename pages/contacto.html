@@ -120,15 +120,15 @@
                 <form action="" method="post" class="form">
                     <div class="label-input">
                         <label for="nombre" class="label-consultas">Nombre y Apellido:</label>
-                        <input type="text" id="nombre" name="nombre" required class="input-consultas">
+                        <input type="text" id="nombre" name="nombre" required class="input-consultas" required>
                     </div>
                     <div class="label-input">
                         <label for="email" class="label-consultas">Correo electrónico:</label>
-                        <input type="email" id="email" name="email" required class="input-consultas">
+                        <input type="email" id="email" name="email" required class="input-consultas" required>
                     </div>
                     <div class="label-input">
                         <label for="mensaje" class="label-consultas">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" required class="input-consultas"></textarea>
+                        <textarea id="mensaje" name="mensaje" rows="5" required class="input-consultas" required></textarea>
                     </div>
                     <div class="div-boton">
                         <button type="submit" class="boton">Enviar</button>
@@ -148,7 +148,7 @@
                 <form action="" method="post" class="email-form">
                     <label for="correo" class="email-label">Ofertas exclusivas en tu mail</label>
                     <input type="email" name="correo" id="correo" placeholder="manuelbelgrano@gmail.com"
-                        class="email-input">
+                        class="email-input" required>
                     <input type="submit" value="Enviar" class="email-submit">
                 </form>
             </div>
